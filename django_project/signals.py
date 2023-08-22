@@ -7,6 +7,6 @@ from django.core.management import call_command
 
 @receiver(post_migrate)
 def run_migrations(sender, **kwargs):
-    if sender.name == "your_app_name":
+    if sender.name == "django_project":
         call_command("makemigrations")
         call_command("migrate")
