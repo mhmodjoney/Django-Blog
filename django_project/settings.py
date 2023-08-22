@@ -126,11 +126,14 @@ USE_TZ = True
 # ...
 
 # Static files configuration
+# Static files configuration
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'static'),
-# ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Additional directories for static files (optional)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'other_static_directory'),
+]
 
 # ...
 
